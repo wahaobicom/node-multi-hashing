@@ -1,17 +1,9 @@
-## This repo is looking for maintainers! Please reach out if interested.
-
---------
-
-
-
 node-multi-hashing
 ===============
 
-[![Build Status](https://travis-ci.org/zone117x/node-multi-hashing.png?branch=master)](https://travis-ci.org/zone117x/node-multi-hashing)
-
-[![NPM](https://nodei.co/npm/multi-hashing.png?downloads=true&stars=true)](https://nodei.co/npm/multi-hashing/)
-
 Cryptocurrency hashing functions for node.js.
+
+With added support for Minotaur.
 
 
 Algorithms
@@ -38,6 +30,7 @@ Algorithms
 * boolberry
 * sha256d
 * lbry
+* minotaur
 
 Usage
 -----
@@ -45,7 +38,7 @@ Usage
 Install
 
 ```bash
-npm install multi-hashing
+npm install https://github.com/litecoincash-project/node-multi-hashing/
 ```
 
 So far this native Node.js addon can do the following hashing algos
@@ -53,7 +46,7 @@ So far this native Node.js addon can do the following hashing algos
 ```javascript
 var multiHashing = require('multi-hashing');
 
-var algorithms = ['quark', 'x11', 'scrypt', 'scryptn', 'scryptjane', 'keccak', 'bcrypt', 'skein', 'blake'];
+var algorithms = ['quark', 'x11', 'scrypt', 'scryptn', 'scryptjane', 'keccak', 'bcrypt', 'skein', 'blake', 'minotaur'];
 
 var data = new Buffer("7000000001e980924e4e1109230383e66d62945ff8e749903bea4336755c00000000000051928aff1b4d72416173a8c3948159a09a73ac3bb556aa6bfbcad1a85da7f4c1d13350531e24031b939b9e2b", "hex");
 
