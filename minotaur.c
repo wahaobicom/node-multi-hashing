@@ -24,6 +24,11 @@
 #include "sha3/sph_whirlpool.h"
 #include "sha3/sph_sha2.h"
 
+#ifndef _MSC_VER
+#define _ALIGN(x) __attribute__ ((aligned(x)))
+#else
+#define _ALIGN(x) __declspec(align(x))
+#endif
 // Config
 #define MINOTAUR_ALGO_COUNT	16
 
